@@ -6,10 +6,6 @@ app.use(express.json());
 
 const PORT = 3000;
 
-app.get("/ping", (_req, res) => {
-  res.send("Hello World!");
-});
-
 app.use("/api/tasks", taskRouter);
 
 app.listen(PORT, () => {
